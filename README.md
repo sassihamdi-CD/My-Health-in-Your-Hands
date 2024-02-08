@@ -1,6 +1,6 @@
 # My Health in Your Hands - Frontend Developer README
 
-![frontend](https://ideogram.ai/g/jWrUvbzjT4yMCYz9YvtdJQ/3)
+![frontend](assets/images/Design_a_word_Frontend_developer_in_text_modif.jpg) 
 
 # 🚀 Introduction 🚀
 

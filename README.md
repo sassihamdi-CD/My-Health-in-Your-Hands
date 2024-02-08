@@ -13,8 +13,9 @@ Empathy in Every Appointment, Your Health,Our Commitment.
 My health in your hands is a groundbreaking mobile application designed to revolutionize healthcare experiences. Powered by React Native for a seamless frontend and a robust Spring Boot backend, the project aims to address common challenges in accessing and managing healthcare services.
 
 ## Project Structure
-- Frontend: 
-- Backend:
+- Frontend: [Backend README](https://github.com/sassihamdi-CD/My-Health-in-Your-Hands/tree/frontend_development)
+- Backend: [Backend README](https://github.com/sassihamdi-CD/My-Health-in-Your-Hands/tree/backend_development)
+
 
 ## Key Objectives:
 - Efficiency: Streamlining healthcare processes for intuitive appointment management and queue navigation.

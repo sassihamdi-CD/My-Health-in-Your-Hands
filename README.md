@@ -1,6 +1,7 @@
 # My Health in Your Hands - Frontend Developer README
 
-![frontend](assets/images/Design_a_word_Frontend_developer_in_text_modif.jpg) 
+<img src="assets/images/Design_a_word_Frontend_developer_in_text_modif.jpg" alt="frontend" width="300" height="200">
+
 
 # 🚀 Introduction 🚀
 

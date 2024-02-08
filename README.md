@@ -1,5 +1,7 @@
 # My Health in Your Hands - Frontend Developer README
 
+![frontend](C:\Users\MYPC\Downloads\Design_a_word_Frontend_developer_in_text_modif.jpg)
+
 # 🚀 Introduction 🚀
 
 Welcome to the frontend development of our My Health application! As the frontend developer, I'm excited to share my role and responsibilities in shaping the user interface and overall user experience of our mobile health app. This README will provide insights into my role, the UI design, and testing strategies aimed at creating an application that users will love.

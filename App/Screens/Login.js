@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import React from 'react'
 import app from './../../assets/images/app_logo.png'
 import Colors from '../../assets/Shared/Colors'
@@ -19,7 +19,7 @@ export default function Login() {
           borderTopLeftRadius: 20,
           borderTopRightRadius: 20,
         }}>
-        <Text style={styles.heading}> Your Utimate Doctor 
+        <Text style={styles.heading}> Your Utimate Doctor
           <Text> Appointment medical Booking App </Text>
           <Text> Book your appointment effortlessly with Hamndi </Text>
         </Text>

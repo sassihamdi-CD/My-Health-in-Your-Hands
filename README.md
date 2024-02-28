@@ -1,26 +1,43 @@
-# My Health in Your Hands - Frontend Developer README
+# My Health in your hands
 
-<img src="assets/images/Design_a_word_Frontend_developer_in_text_modif.jpg" alt="frontend" width="300" height="200">
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+![Logo](/logo/app_logo.png)
+
+Empowering individuals with seamless healthcare management.
+Empathy in Every Appointment, Your Health, Our Commitment.
+
+## Overview
+My health in your hands is a groundbreaking mobile application designed to revolutionize healthcare experiences. Powered by React Native for a seamless frontend and a robust Spring Boot backend, the project aims to address common challenges in accessing and managing healthcare services.
+
+## Project Structure
+- Frontend: [Frontend Workspace](https://github.com/sassihamdi-CD/My-Health-in-Your-Hands/tree/frontend_development)
+- Backend: [Backend Workspace](https://github.com/sassihamdi-CD/My-Health-in-Your-Hands/tree/backend_development)
 
 
-# 🚀 Introduction 🚀
+## Key Objectives:
+- Efficiency: Streamlining healthcare processes for intuitive appointment management and queue navigation.
+- Accessibility: Bridging the gap between users and healthcare services for a more user-friendly experience.
+- Empowerment: Putting health management in the hands of users, empowering them to take control of their healthcare journey.
 
-Welcome to the frontend development of our My Health application! As the frontend developer, I'm excited to share my role and responsibilities in shaping the user interface and overall user experience of our mobile health app. This README will provide insights into my role, the UI design, and testing strategies aimed at creating an application that users will love.
-My Role
+## Challenges We Tackle:
 
-As the frontend developer, my primary focus is on designing and implementing the user interface (UI) of our mobile health application using React Native. Here's an overview of my responsibilities:
+- Long Queues: Real-time queue management to alleviate the frustration of waiting in long lines.
+- Appointment Complexity: Simplifying appointment scheduling for easy booking and management.
+- Communication Gaps: Leveraging push notifications to keep users informed and engaged, reducing missed appointments.
 
-   + UI Design and Implementation: I'll be translating design mockups and specifications into functional screens and features. This includes ensuring consistency in design elements, typography, colors, and layouts throughout the application.
+## Why My health in your hands?
+- User-Centric Design: Every feature is crafted with user convenience and experience as the top priorities.
+- Cutting-Edge Technology: Utilizing React Native and Spring Boot for an innovative and reliable solution
+- Community-Driven: Inviting contributors and users to join our community, shaping the future of healthcare together.
 
-   + Navigation Handling: I'll be responsible for implementing navigation flows within the application to ensure seamless user experiences. This involves setting up navigation stacks, tabs, and drawers using React Navigation or similar libraries.
+## Getting Started:
+Ready to experience a new era of healthcare? Dive into the documentation and embark on your Sahty Bein Aydik journey.
 
-   + Backend Integration: While the backend role is not covered in this README, I'll collaborate closely with backend developers to integrate frontend components with backend APIs. This will involve consuming RESTful APIs or GraphQL endpoints to fetch data and populate UI components.
+## Contributing:
+Join us in shaping the future of healthcare! Explore our contribution guidelines to become a part of something extraordinary.
 
-   + State Management: I'll be implementing state management solutions such as Redux, MobX, or React Context API to manage application state efficiently. This includes centralizing and organizing application state to facilitate data sharing between components.
-
-   + Testing and Quality Assurance: I'll be responsible for ensuring the reliability and quality of the application through thorough testing. This involves writing unit tests for individual components and screens using testing frameworks like Jest, as well as conducting integration tests to verify interactions with backend APIs.
-
-## UI Design Philosophy 📱
-
-My approach to UI design for our My Health application revolves around creating visually appealing and user-friendly interfaces that prioritize user experience. 
- 
+## License:
+This project is licensed under the MIT License. Your journey to better healthcare begins here!

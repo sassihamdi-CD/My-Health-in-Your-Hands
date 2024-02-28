@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+  margin-top: -50px; /* Reduce the top margin of the element */
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+  background-image: url('/logo/landing_page.png'); /* Replace with your image URL */
+  background-position: top left; /* Adjust the position of the image */
+  background-size: 100% 100%; /* Adjust the size of the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding-top: 200px; /* Reduce the top padding of the element */
+  padding-left: 35px;
+  padding-right: 40px;
+  padding-bottom: 300px;
+  border-radius: 5px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+        .hero-content h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #ffffff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2779bd;
+        }
+
+        .feature {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 10px; /* Add border radius for a rounded corner effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+.feature-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.feature-content h2 {
+    color: # #3498db;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Additional style for larger screens if needed */
+@media screen and (min-width: 768px) {
+    .feature img {
+        max-width: 600px;
+    }
+}
+
+
+/* Additional style for larger screens if needed */
+@media screen and (min-width: 768px) {
+    .feature img {
+        max-width: 600px;
+        margin-left: 40px;
+    }
+}
+
+#about {
+    background-color: #f8f8f8; /* Light gray background color */
+    padding: 80px 0;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.team-members ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.team-members ul li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.team-members ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.team-members ul li i {
+    margin-bottom: 5px; /* Add space between icon and text */
+    font-size: 1.5em;
+}
+
+.team-members ul li a:hover {
+    color: #2779bd;
+}
+/* Additional styling for links within paragraphs */
+.about-content a {
+    color: #3498db; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-content a:hover {
+    color: #2779bd; /* Darker blue on hover */
+}
+
+
+        .screenshot-container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .screenshot-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #f8f8f8;
+        }
+
+        /* Add styles to the contact section */
+.contact-section {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* Add styles to the contact info */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.contact-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.contact-card h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.contact-card p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.contact-card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card ul li {
+  margin: 0 10px;
+}
+
+.contact-card ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.contact-card ul li a:hover {
+  color: #3498db;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the contact cards stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}
+
+/* Add styles to the download section */
+.download-section {
+  padding: 40px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.download-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.download-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.download-section strong {
+  color: #3498db;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #2779bd;
+}
+
+.social-proof {
+  margin-top: 40px;
+}
+
+.social-proof p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #555;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+
+    </style>
+    <title>Your Health in Your Hands</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="https://github.com/sassihamdi-CD/My-Health-in-Your-Hands">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">            
+            <a href="https://github.com/sassihamdi-CD/My-Health-in-Your-Hands" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+<section id="features">
+    <div class="feature">
+        <div class="feature-content">
+            <h2>Real-time Queue Tracking</h2>
+            <p>Stay updated with real-time information about hospital queues. Our app provides accurate and instant queue status, allowing users to plan their visit efficiently.</p>
+        </div>
+        <img src="logo/screenshot4.jpg" alt="Feature 1 Image" class="feature-image">
+    </div>
+
+    <div class="feature">
+        <img src="logo/screenshot2.jpg" alt="Feature 2 Image" class="feature-image">
+        <div class="feature-content">
+            <h2>Appointment Reminders</h2>
+            <p>Receive timely reminders for your scheduled appointments. Our app ensures you never miss an appointment, enhancing the overall patient experience and reducing no-shows.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <img src="logo/screenshot3.jpg" alt="Feature 3 Image" class="feature-image">
+        <div class="feature-content">
+            <h2>Virtual Check-in</h2>
+            <p>Streamline your hospital visit with our virtual check-in feature. Users can check-in remotely, reducing physical contact and minimizing wait times in the hospital lobby.</p>
+        </div>
+    </div>
+</section>
+
+
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How it works</h2>
+        <p><strong>My Health in Your Hands</strong> is a mobile app that lets you book appointments and track queues in public hospitals. With our app, you can:</p>
+        <ul>
+          <li>Find the best hospital for your needs based on location, availability, and queue status</li>
+          <li>Secure your spot and receive reminders and notifications about your appointment</li>
+          <li>Save time and avoid long waiting times in the registration process</li>
+          <li>Access your medical records and prescriptions online</li>
+          <li>Rate your experience and provide feedback to improve the quality of service</li>
+        </ul>
+        <p>Our app is easy to use and works on both iOS and Android devices. All you need is a smartphone and an internet connection.</p>
+      </div>
+    </section>
+
+    <div class="download-section">
+        <h2>Ready to try it?</h2>
+        <p>If you want to experience the benefits of <strong>My Health in Your Hands</strong>, download our app today and sign up for a free trial. You'll get access to all the features and functions of our app for 14 days. No credit card required.</p>
+        <p>To get started, click the button below and follow the instructions. It's that simple.</p>
+        <a href="^1^" class="download-button">Download Now</a>
+        <div class="social-proof">
+          <p>Join over 10,000 happy users who have improved their health and saved time with <strong>My Health in Your Hands</strong>.</p>
+          <p>★★★★★ "This app is amazing. It helped me book an appointment with a doctor in minutes and saved me a lot of time and hassle. The app is very easy to use and has a lot of features. I highly recommend it." - Amina, 34</p>
+        </div>
+      </div>
+      
+      
+<section id="about">
+    <div class="about-content">
+        <h2>Our Story</h2>
+        <p>Our journey with “My Health in Your Hands” isn’t just a development story; it's a profound exploration rooted in our shared vision. Each member of our team brings a unique perspective, but our collective connection to this project is woven from personal experiences and a deep desire to make a meaningful difference.</p>
+
+        <p>Coming from diverse backgrounds, we've witnessed firsthand the challenges individuals face in accessing timely healthcare due to endless queues. Memories of loved ones patiently waiting for hours in hospital lines have left indelible marks on each of us. It's not just about inconvenience; it's about the emotional toll it takes on patients and their families.</p>
+
+        <p>As a team, we came together with a shared purpose — to create “My Health in Your Hands” not just as a technical solution, but as a heartfelt response to alleviate the burden of waiting for individuals and families alike.</p>
+
+        <p>Throughout this collective journey, every line of code we've written is a step toward transforming those waiting moments into opportunities for individuals to focus on their well-being rather than the ticking clock. It has become our shared mission to contribute to a solution that resonates with the emotions we've all witnessed in our respective backgrounds.</p>
+
+        <p>So, when people ask, “Why this project?” it's not merely a fascination with healthcare technology; it's our commitment to the human stories, a dedication to making healthcare more accessible, and a tribute to the resilience of those who’ve patiently waited in queues.</p>
+
+        <p>In essence, “My Health in Your Hands” is more than an app; it's a collective manifestation of empathy, a technological embrace aimed at ensuring no one feels powerless in the face of healthcare queues. The hours spent coding weren’t just about algorithms; we were collectively weaving a narrative of compassion and understanding.</p>
+
+        <p>As we unveil “My Health in Your Hands” to the world, it’s not just a project launch; it's a heartfelt invitation to join us, the entire team, in redefining the healthcare experience. Together, let’s turn waiting moments into empowering strides toward a healthier, more compassionate future.</p>
+ <a href="https://github.com/sassihamdi-CD/My-Health-in-Your-Hands">GitHub repository</a>.</p>
+    </div>
+</section>
+
+ <!-- Contact Section -->
+ <div class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or feedback about our app, please feel free to contact us. We would love to hear from you.</p>
+    <div class="contact-info">
+      <div class="contact-card">
+        <img src="/logo/sassi.jpg" alt="Your profile picture">
+        <h3>Sassi Hamdi</h3>
+        <p>Co-founder and Backend developer</p>
+        <ul>
+          <li><a href="^1^"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="^2^"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="mailto:sassihamdi777@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      <div class="contact-card">
+        <img src="/logo/paul.jpg" alt="Your friend's profile picture">
+        <h3>Jayking Paul</h3>
+        <p>Co-founder and Frontend developer</p>
+        <ul>
+          <li><a href="^3^"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="^4^"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="mailto:your-friend-email@example.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-of-service">Terms of Service</a></li>
+        </ul>
+        <p>&copy; 2024 My Health in Your Hands. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
